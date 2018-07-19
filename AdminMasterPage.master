@@ -1,0 +1,122 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="AdminMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        #Menu2{
+        background-image:url("image/pexels-photo-724712.jpeg");
+        <%--background-attachment:fixed;--%>
+        background-position:center;
+        background-repeat:no-repeat;
+        background-size:cover;
+        width:1400px;
+        height:400px;
+       
+        }
+       
+#mapContainer {
+    height: 350px;
+}
+
+#mapCanvas {
+    width: 1000px;
+    height: 350px;
+}
+#commen
+{
+    height: 250px;
+    width: 300px;
+    background-color: #dfe4ea;
+    overflow:scroll;
+    margin-top:50px;
+}
+#form1
+{
+    height:500px;
+}
+li
+{
+    display:inline;
+   padding:0 10px 0 10px;
+   font-weight:bold;
+   
+   
+}
+#GridView1
+{
+    width:900px;
+}
+#he
+{
+    background-color:black;
+    width:100%;
+    <%-- opacity:0.5;
+        filter:alpha(opacity=50);--%>
+    position:fixed;
+    z-index:1;
+}
+#fo
+{
+    background-color:Black;
+}
+ #he a:hover {
+        color: rgb(149, 165, 166);
+      }
+</style>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> 
+  
+</head>
+<body>
+<div id="Menu2">
+    <form id="form1" runat="server">
+    <header id="he">
+
+        <ul >
+       <%-- <li><a href="home.aspx" style="color:#fff;text-decoration:none;">HOME</a></li>--%>
+        <li><a href="adminadddriver.aspx" style="color:#fff;text-decoration:none;" >ADD USER</a></li>
+       <li><a href="showdrivers.aspx" style="color:#fff;text-decoration:none;">SHOW USER</a></li>
+       <li><a href="admintrackdriver.aspx" style="color:#fff;text-decoration:none;">TRACK USER</a></li>
+       <li><a href="adminlogin.aspx" style="color:#fff;text-decoration:none;">LOG OUT</a></li>
+       <li><a href="#" style="color:#fff;text-decoration:none;float:right;margin-right:10px;"><i class="fas fa-car"></i>VEHICLE TRACKING</a></li>
+       </ul>
+    </header>
+    
+   
+    </div>
+    <div>
+    <table style="margin:0 auto;">
+    <tr><td colspan="2"></td></tr>
+    <tr>
+    <td>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </td>
+        <%--<td>
+        <div id="commen" style="height: 312px; width: 340px;background-color: red;overflow:scroll;"></div>
+        </td>--%>
+ </tr>
+        
+    </table>
+        
+    </div>
+    <footer id="fo" style="height:70px;">
+    <span style="color:White;margin-left:550px;">Copyright<i class="far fa-copyright"></i>YourWebSite2018</span><br />
+    <span style="color:White;margin-left:630px;size:20px;"><i class="fab fa-facebook-square"></i>    <i class="fab fa-twitter-square"></i>    <i class="fab fa-github-square"></i></span>
+    </footer>
+   
+    </form>
+</body>
+</html>
+
